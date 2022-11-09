@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  width: 150px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+footer svg {
+  stroke: #fff;
+  width: 100px;
+}
+footer path {
+  fill: #fff;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  border-bottom: 2px solid #99E2D0;
+  text-transform: uppercase;
+  position: relative;
+}
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 90%;
+  height: 10px;
+  background-color: #f7f7f7;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+.carte-plat {
+  width: 80%;
+  height: 90px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 5px 20px 20px 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+.carte-plat-1 {
+  animation: apparition ease-in-out 1s both;
+  animation-delay: calc(1ms*200);
+}
+.carte-plat-2 {
+  animation: apparition ease-in-out 1s both;
+  animation-delay: calc(2ms*200);
+}
+.carte-plat-3 {
+  animation: apparition ease-in-out 1s both;
+  animation-delay: calc(3ms*200);
+}
+.carte-plat__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.carte-plat__details p {
+  height: 20px;
+  text-overflow: ellipsis;
+}
+.carte-plat-droite {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #99E2D0;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 30px;
+  text-align: center;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1s ease-in-out;
+}
+.carte-plat-droite i {
+  display: inline-block;
+  font-size: 30px;
+  transition: transform 1s ease-in-out;
+}
+.carte-plat:hover .carte-plat-droite {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.carte-plat:hover .carte-plat-droite > i {
+  transform: rotate(360deg);
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0.2;
+    transform: translateY(-2px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-7px);
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

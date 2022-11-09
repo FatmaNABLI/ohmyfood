@@ -1,14 +1,36 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 header {
   text-align: center;
 }
 header img {
   width: 150px;
   padding: 10px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+footer svg {
+  stroke: #fff;
+  width: 100px;
+}
+footer path {
+  fill: #fff;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 p,
@@ -191,28 +213,6 @@ form i {
 }
 .restaurants__carte p {
   margin-left: 10px;
-}
-
-footer {
-  background-color: #353535;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-footer svg {
-  stroke: #fff;
-  width: 100px;
-}
-footer path {
-  fill: #fff;
-}
-footer li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-footer a {
-  text-decoration: none;
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

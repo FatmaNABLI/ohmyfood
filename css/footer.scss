@@ -1,0 +1,25 @@
+footer {
+    background-color: #353535;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    svg {
+        stroke: #fff;
+        width: 100px;
+    }
+
+    path {
+        fill: #fff;
+    }
+
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
