@@ -1,3 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p,
+li,
+a,
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  height: 30px;
+}
+
 header {
   text-align: center;
 }
@@ -26,33 +54,6 @@ footer li {
 footer a {
   text-decoration: none;
   color: #fff;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-p,
-li,
-a,
-h1,
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  margin-bottom: 15px;
-}
-
-h2 {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-h3 {
-  height: 30px;
 }
 
 form {
@@ -147,6 +148,7 @@ form i {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
   position: relative;
 }
 .restaurants__carte-nouveau::before {

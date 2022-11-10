@@ -1,6 +1,27 @@
 @import 'variables';
 @import 'reset';
+@import 'titres';
 @import 'header', 'footer';
+
+h1 {
+    font-family: Shrikhand;
+}
+
+main {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-position: top;
+    background-size: 120% 320px;
+    background-repeat: no-repeat;
+    padding-top: 280px;
+}
+
+.contenu-principal {
+    background-color: $backgroud-gris-clair;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
 
 h2 {
     border-bottom: 2px solid $couleur-tertiaire;
@@ -13,7 +34,6 @@ h2 {
         width: 90%;
         height: 10px;
         background-color: $backgroud-gris-clair;
-
         position: absolute;
         right: 0px;
         top: 22px;
@@ -21,9 +41,6 @@ h2 {
 
 }
 
-main {
-    background-color: $backgroud-gris-clair;
-}
 
 .carte-plat {
     width: 80%;
@@ -40,7 +57,7 @@ main {
     @for $i from 1 through 3 {
         &-#{$i} {
             animation: apparition ease-in-out 1s both;
-            animation-delay: calc(#{$i}ms*200);
+            animation-delay: calc(#{$i}ms*100);
 
         }
     }
@@ -57,8 +74,13 @@ main {
         }
     }
 
+    &-gauche {
+        width: 100%;
+        transition: width 1s ease-in-out;
+    }
+
     &-droite {
-        width: 80px;
+        width: 20%;
         height: 100%;
         position: absolute;
         top: 0px;
@@ -82,6 +104,10 @@ main {
             transition: transform 1s ease-in-out;
         }
 
+    }
+
+    &:hover .carte-plat-gauche {
+        width: 80%;
     }
 
     &:hover .carte-plat-droite {
