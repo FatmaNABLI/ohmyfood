@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 320px;
+  max-width: 1400px;
+  margin: auto;
+}
+
 p,
 li,
 a,
@@ -95,7 +101,7 @@ h2 {
 h2::before {
   content: "";
   display: inline-block;
-  width: 10%;
+  width: 30px;
   height: 2px;
   background-color: #99E2D0;
   position: absolute;
@@ -213,18 +219,12 @@ main {
   transform: rotate(360deg);
 }
 
-/*.desserts {
-    padding-bottom: 20px;
-
-    .carte-plat:last-child {
-        margin-bottom: 0px;
-    }
-}*/
-.btn {
+.commande {
+  text-align: center;
+}
+.commande .btn {
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @keyframes apparition {
@@ -239,6 +239,18 @@ main {
   100% {
     opacity: 1;
     transform: translateY(-7px);
+  }
+}
+/******************************
+ *        Reponsive           *
+ ******************************/
+@media screen and (min-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  .contenu-principal {
+    width: 70%;
+    margin: auto;
   }
 }
 

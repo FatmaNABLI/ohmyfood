@@ -24,7 +24,7 @@ h2 {
     &::before {
         content: "";
         display: inline-block;
-        width: 10%;
+        width: 30px;
         height: 2px;
         //background-color: $backgroud-gris-clair;
         background-color: $couleur-tertiaire;
@@ -163,19 +163,16 @@ main {
     }
 }
 
-/*.desserts {
-    padding-bottom: 20px;
+.commande {
+    text-align: center;
 
-    .carte-plat:last-child {
-        margin-bottom: 0px;
+    .btn {
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
-}*/
 
-.btn {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 @keyframes apparition {
@@ -192,5 +189,20 @@ main {
     100% {
         opacity: 1;
         transform: translateY(-7px);
+    }
+}
+
+/******************************
+ *        Reponsive           *
+ ******************************/
+@media screen and (min-width:768px) {
+    h1 {
+        text-align: center;
+    }
+
+    .contenu-principal {
+        width: 70%;
+        margin: auto;
+
     }
 }
