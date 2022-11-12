@@ -5,7 +5,11 @@
 @import 'mixins';
 @import 'btn';
 
-
+body {
+    min-width: 320px;
+    max-width: 1400px;
+    margin: auto;
+}
 
 form {
     position: relative;
@@ -181,4 +185,29 @@ section {
             margin-left: 10px;
         }
     }
+}
+
+/******************************
+ *        Reponsive           *
+ ******************************/
+@media screen and (min-width:768px) {
+    .fonctionnement__etapes {
+        display: flex;
+
+        .fonctionnement__etape {
+            width: 30%;
+        }
+    }
+
+    .restaurants__cartes {
+        display: flex;
+
+        .restaurants__carte {
+            width: 23%;
+        }
+    }
+
+
+
+
 }
