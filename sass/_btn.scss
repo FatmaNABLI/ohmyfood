@@ -1,0 +1,16 @@
+@import 'mixins';
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    @include couleur-degrade;
+
+    :hover {
+        //background-color: ;
+    }
+}

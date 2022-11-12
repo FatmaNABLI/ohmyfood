@@ -3,9 +3,64 @@
 @import 'titres';
 @import 'header', 'footer';
 @import 'mixins';
+@import 'btn';
 
 h1 {
     font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2 {
+    //border-bottom: 2px solid $couleur-tertiaire;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 10%;
+        height: 2px;
+        //background-color: $backgroud-gris-clair;
+        background-color: $couleur-tertiaire;
+        position: absolute;
+        //right: 0px;
+        top: 22px;
+    }
+
+}
+
+h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+header {
+
+    //display: flex;
+    position: relative;
+
+    a {
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        color: $couleur-primaire;
+        //width: 50px;
+        //height: 50px;
+        //border-radius: 25px;
+
+        :hover {
+            font-size: 18px;
+        }
+    }
 }
 
 main {
@@ -21,24 +76,9 @@ main {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding-top: 20px;
-    padding-left: 10px;
-}
-
-h2 {
-    border-bottom: 2px solid $couleur-tertiaire;
-    text-transform: uppercase;
-    position: relative;
-
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 90%;
-        height: 10px;
-        background-color: $backgroud-gris-clair;
-        position: absolute;
-        right: 0px;
-        top: 22px;
-    }
+    padding-left: 15px;
+    padding-bottom: 30px;
+    margin: auto;
 
 }
 
@@ -72,6 +112,8 @@ h2 {
 
         p {
             height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
         }
     }
@@ -99,7 +141,6 @@ h2 {
         transform-origin: right;
         transition: transform 1s ease-in-out;
 
-
         i {
             display: inline-block;
             font-size: 30px;
@@ -120,6 +161,21 @@ h2 {
             transform: rotate(360deg);
         }
     }
+}
+
+/*.desserts {
+    padding-bottom: 20px;
+
+    .carte-plat:last-child {
+        margin-bottom: 0px;
+    }
+}*/
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes apparition {

@@ -18,8 +18,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -56,8 +55,60 @@ footer a {
   color: #fff;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  background: linear-gradient(175deg, rgb(2, 0, 36) 0%, rgb(255, 121, 208) 0%, rgb(147, 86, 220) 100%);
+}
+
 h1 {
   font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: left;
+}
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 10%;
+  height: 2px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 22px;
+}
+
+h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+header {
+  position: relative;
+}
+header a {
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  color: #9356DC;
+}
+header a :hover {
+  font-size: 18px;
 }
 
 main {
@@ -73,23 +124,9 @@ main {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding-top: 20px;
-  padding-left: 10px;
-}
-
-h2 {
-  border-bottom: 2px solid #99E2D0;
-  text-transform: uppercase;
-  position: relative;
-}
-h2::before {
-  content: "";
-  display: inline-block;
-  width: 90%;
-  height: 10px;
-  background-color: #f7f7f7;
-  position: absolute;
-  right: 0px;
-  top: 22px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  margin: auto;
 }
 
 .carte-plat {
@@ -124,6 +161,8 @@ h2::before {
 }
 .carte-plat__details p {
   height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .carte-plat-gauche {
@@ -161,6 +200,20 @@ h2::before {
 }
 .carte-plat:hover .carte-plat-droite > i {
   transform: rotate(360deg);
+}
+
+/*.desserts {
+    padding-bottom: 20px;
+
+    .carte-plat:last-child {
+        margin-bottom: 0px;
+    }
+}*/
+.btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes apparition {
