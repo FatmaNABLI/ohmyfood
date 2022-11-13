@@ -95,6 +95,12 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
+h1 i {
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+}
 
 h2 {
   text-transform: uppercase;
