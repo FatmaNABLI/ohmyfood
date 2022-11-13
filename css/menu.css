@@ -81,8 +81,14 @@ footer a {
   text-decoration: none;
   color: #fff;
   border-radius: 50px;
-  background: linear-gradient(175deg, rgb(2, 0, 36) 0%, rgb(255, 121, 208) 0%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
 h1 {
   font-family: Shrikhand;
   font-size: 28px;
@@ -198,7 +204,6 @@ main {
   border-bottom-right-radius: 20px;
   padding-top: 30px;
   text-align: center;
-  opacity: 0;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 1s ease-in-out;
@@ -212,7 +217,6 @@ main {
   width: 80%;
 }
 .carte-plat:hover .carte-plat-droite {
-  opacity: 1;
   transform: scaleX(1);
 }
 .carte-plat:hover .carte-plat-droite > i {

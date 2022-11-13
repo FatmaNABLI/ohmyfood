@@ -135,8 +135,6 @@ main {
         border-bottom-right-radius: 20px;
         padding-top: 30px;
         text-align: center;
-        opacity: 0;
-        //transition: opacity 1s ease-in-out;
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 1s ease-in-out;
@@ -154,7 +152,6 @@ main {
     }
 
     &:hover .carte-plat-droite {
-        opacity: 1;
         transform: scaleX(1);
 
         &>i {
