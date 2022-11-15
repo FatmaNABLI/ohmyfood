@@ -10,15 +10,18 @@ body {
   margin: auto;
 }
 
-p,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*p,
 li,
 a,
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
-}
-
+    font-family: 'Roboto', sans-serif;
+}*/
 h1 {
   margin-bottom: 15px;
 }
@@ -99,6 +102,8 @@ form input {
   text-align: center;
   border-style: none;
   box-shadow: inset 0px 2px 2px #cecece;
+  font-size: 16px;
+  font-weight: 500;
 }
 form input:focus {
   border-style: none;
