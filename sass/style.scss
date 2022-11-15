@@ -4,7 +4,11 @@
 @import 'header', 'footer';
 @import 'mixins';
 @import 'btn';
+@import 'spinner';
 
+#bloc-page {
+    position: relative;
+}
 
 form {
     position: relative;
