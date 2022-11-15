@@ -11,7 +11,9 @@ $size: 3vh;
     width: 100%;
     z-index: 2;
     margin: auto;
-    animation: load-conteneur 4s forwards;
+    animation: load-conteneur 4s linear forwards, minimiser 100ms 3s forwards;
+    //animation:;
+
 }
 
 /*.container {
@@ -61,14 +63,36 @@ margin: auto;
 @keyframes load-conteneur {
     0% {
         opacity: 1;
+        //z-index: 2;
     }
 
-
-    90% {
+    50% {
         opacity: 0.8;
     }
 
+    80% {
+        opacity: 0;
+
+    }
+
+    90% {
+        opacity: 0;
+    }
+
     100% {
-        opacity: 0%;
+        opacity: 0;
+        // z-index: -1;
+
+
+    }
+}
+
+@keyframes minimiser {
+    0% {
+        z-index: 2;
+    }
+
+    100% {
+        z-index: -1;
     }
 }

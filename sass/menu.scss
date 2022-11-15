@@ -120,7 +120,7 @@ header {
     @include ombre-boite;
     display: flex;
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
         &-#{$i} {
             animation: apparition ease-in-out 1s both;
             animation-delay: calc(#{$i}ms*100);

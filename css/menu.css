@@ -10,15 +10,18 @@ body {
   margin: auto;
 }
 
-p,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*p,
 li,
 a,
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
-}
-
+    font-family: 'Roboto', sans-serif;
+}*/
 h1 {
   margin-bottom: 15px;
 }
@@ -195,6 +198,10 @@ header a :hover {
 .carte-plat-3 {
   animation: apparition ease-in-out 1s both;
   animation-delay: calc(3ms*100);
+}
+.carte-plat-4 {
+  animation: apparition ease-in-out 1s both;
+  animation-delay: calc(4ms*100);
 }
 .carte-plat__details {
   display: flex;
