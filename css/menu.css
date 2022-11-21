@@ -245,7 +245,7 @@ header a :hover {
   transition: transform 1s ease-in-out;
 }
 .carte-plat:hover .carte-plat-gauche {
-  width: 80%;
+  width: 85%;
 }
 .carte-plat:hover .carte-plat-droite {
   transform: scaleX(1);
