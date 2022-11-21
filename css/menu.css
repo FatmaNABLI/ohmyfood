@@ -92,18 +92,54 @@ footer a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
+.heart-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+}
+
+.heart-clip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clip-path: url(#svgPath);
+}
+.heart-clip:hover::before {
+  transform: scale(1);
+}
+.heart-clip:active::before {
+  transform: scale(1);
+}
+.heart-clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(175deg, rgb(2, 0, 36) 0%, rgb(255, 121, 208) 0%, rgb(147, 86, 220) 100%);
+  opacity: 1;
+  transform: scale(0);
+  transition: transform 0.7s linear;
+  transform-origin: center bottom;
+}
+
+.heart-stroke {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: gray;
+}
+
 h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
   font-style: italic;
   padding-left: 15px;
-}
-h1 i {
-  font-size: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
 }
 
 h2 {
@@ -173,6 +209,11 @@ header a :hover {
   padding-top: 20px;
   padding-bottom: 30px;
   margin: auto;
+}
+
+.titre {
+  display: flex;
+  justify-content: space-around;
 }
 
 .carte-plat {
@@ -286,6 +327,12 @@ header a :hover {
   .contenu-principal {
     width: 70%;
     margin: auto;
+  }
+  .titre {
+    justify-content: flex-start;
+  }
+  .titre h1 {
+    margin-right: 40px;
   }
 }
 

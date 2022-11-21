@@ -4,6 +4,7 @@
 @import 'header', 'footer';
 @import 'mixins';
 @import 'btn';
+@import 'heart-load';
 
 h1 {
     font-family: Shrikhand;
@@ -11,13 +12,6 @@ h1 {
     font-weight: 400;
     font-style: italic;
     padding-left: 15px;
-
-    i {
-        font-size: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 200;
-    }
 }
 
 h2 {
@@ -95,6 +89,7 @@ header {
     }
 }
 
+
 .contenu-principal {
     position: relative;
     top: -50px;
@@ -108,6 +103,10 @@ header {
 
 }
 
+.titre {
+    display: flex;
+    justify-content: space-around;
+}
 
 .carte-plat {
     width: 90%;
@@ -231,5 +230,13 @@ header {
         width: 70%;
         margin: auto;
 
+    }
+
+    .titre {
+        justify-content: flex-start;
+
+        h1 {
+            margin-right: 40px;
+        }
     }
 }
