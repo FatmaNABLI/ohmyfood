@@ -97,6 +97,7 @@ section {
 
 .restaurants {
     background-color: #eaeaea;
+    z-index: 1;
 
     &__carte {
         background-color: #fff;
@@ -108,6 +109,8 @@ section {
         margin-bottom: 20px;
         cursor: pointer;
         position: relative;
+        //pointer-events: none;
+        z-index: 1;
 
         &-nouveau {
             &::before {
@@ -145,6 +148,8 @@ section {
             position: relative;
             width: 40px;
             height: 40px;
+            z-index: 3;
+            //pointer-events: none;
         }
 
         .heart-clip {
@@ -153,6 +158,7 @@ section {
             height: 100%;
             position: relative;
             clip-path: url(#svgPath);
+            //pointer-events: none;
 
             &:hover {
                 &::before {
@@ -169,12 +175,13 @@ section {
                 background-image: linear-gradient(175deg, rgb(2, 0, 36) 0%, rgb(255, 121, 208) 0%, rgb(147, 86, 220) 100%);
                 opacity: 1;
                 transform: scale(0);
-                transition: transform 0.3s linear;
-                transform-origin: center 60%;
+                transition: transform 0.7s linear;
+                transform-origin: center bottom;
             }
         }
 
         .heart-stroke {
+            pointer-events: none;
             width: 100%;
             height: 100%;
             position: absolute;
