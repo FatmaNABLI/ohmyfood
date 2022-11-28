@@ -262,7 +262,7 @@ header a :hover {
 }
 .carte-plat-gauche {
   width: 100%;
-  transition: width 1s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 .carte-plat-droite {
   width: 15%;
