@@ -330,6 +330,7 @@ header a :hover {
   }
   .titre {
     justify-content: flex-start;
+    padding-right: 10px;
   }
   .titre h1 {
     margin-right: 40px;
