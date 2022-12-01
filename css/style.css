@@ -105,12 +105,6 @@ footer a {
   animation: load-conteneur 4s linear forwards, minimiser 100ms 3s forwards;
 }
 
-/*.container {
-min-height: 100vh;
-margin: auto;
-}
-
-*/
 .load {
   width: 30vh;
   height: 22.5vh;
